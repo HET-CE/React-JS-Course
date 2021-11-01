@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 class WelcomeClassbased extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       message: "welcome visitor",
     };
@@ -10,14 +10,12 @@ class WelcomeClassbased extends Component {
 
   changeTextWithArgs(heroName = "Not given") {
     this.setState({
-      ...this.state,
       message: heroName,
     });
     console.log(this);
   }
   changeTextWithoutArgs = () => {
     this.setState({
-      ...this.state,
       message: "you clicked without args",
     });
   };
