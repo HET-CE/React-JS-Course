@@ -14,6 +14,7 @@ import Counter from "./components/Render Props/Counter";
 import ClickCounterTwo from "./components/Render Props/ClickCounterTwo";
 import HoverCounterTwo from "./components/Render Props/HoverCounterTwo";
 import ParentComp from "./components/Context-API/ParentComp";
+import GET_Posts from "./components/Requests/GET_Posts";
 
 function App() {
   return (
@@ -74,6 +75,10 @@ function App() {
       <hr />
       <p>Context- API</p>
       <ParentComp />
+
+      <hr />
+      <p>Requests Thorugh axios</p>
+      <GET_Posts />
     </div>
   );
 }
